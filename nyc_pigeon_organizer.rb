@@ -5,7 +5,6 @@ def nyc_pigeon_organizer(data)
   data.each do |key, value|
       value.each do |intel, pigeons_names|
         pigeons_names.each do |pingeon| 
-          
           if !organized_data[pingeon]
             organized_data[pingeon] = {}
             organized_data[pingeon][key] = []
@@ -16,7 +15,6 @@ def nyc_pigeon_organizer(data)
           elsif organized_data[pingeon] && organized_data[pingeon][key] 
             organized_data[pingeon][key] << intel
           end
-          
         end
       end
   end
