@@ -1,3 +1,20 @@
+require 'pry'
+
 def nyc_pigeon_organizer(data)
-  # write your code here!
-end
+  organized_data = {}
+  data.each do |key, value|
+      value.each do |intel, pigeons_names|
+        pigeons_names.each do |pingeon| 
+          
+          if organized_data[pingeon] != nil 
+             organized_data[pingeon][key] = []
+             organized_data[pingeon][key] << intel
+          else
+            organized_data[pingeon] = {}
+          end
+          
+        end
+      end
+  end
+  organized_data
+  binding.pry
