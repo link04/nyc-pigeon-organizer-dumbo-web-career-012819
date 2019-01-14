@@ -6,7 +6,9 @@ def nyc_pigeon_organizer(data)
       value.each do |intel, pigeons_names|
         pigeons_names.each do |pingeon| 
           
-          if 
+          if !organized_data[pingeon]
+            organized_data[pingeon] = {}
+          elsif
           
           if !organized_data[pingeon] 
             organized_data[pingeon] = {}
