@@ -9,15 +9,12 @@ def nyc_pigeon_organizer(data)
           if !organized_data[pingeon] 
             organized_data[pingeon] = {}
             organized_data[pingeon][key] = []
-          elsif
-          
-          
-          if organized_data[pingeon][key] 
              organized_data[pingeon][key] << intel
-          else
-            organized_data[pingeon] = {}
+          elsif organized_data[pingeon]
             organized_data[pingeon][key] = []
-          end
+             organized_data[pingeon][key] << intel
+          
+        
           
         end
       end
