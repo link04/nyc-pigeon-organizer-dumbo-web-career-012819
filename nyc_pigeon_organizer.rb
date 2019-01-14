@@ -14,6 +14,8 @@ def nyc_pigeon_organizer(data)
             organized_data[pingeon][key] << intel
           elsif organized_data[pingeon]
             organized_data[pingeon][key] = []
+          end
+          
         end
       end
   end
