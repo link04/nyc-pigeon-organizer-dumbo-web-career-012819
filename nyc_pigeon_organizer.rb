@@ -13,8 +13,6 @@ def nyc_pigeon_organizer(data)
           elsif organized_data[pingeon]
             organized_data[pingeon][key] << intel
           end
-        
-          
         end
       end
   end
