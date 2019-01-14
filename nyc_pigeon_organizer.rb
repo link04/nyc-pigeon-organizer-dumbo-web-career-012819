@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
         pigeons_names.each do |pingeon| 
           
           if organized_data[pingeon][key] 
-             organized_data[pingeon][key] = []
+             
              organized_data[pingeon][key] << intel
           else
             organized_data[pingeon] = {}
